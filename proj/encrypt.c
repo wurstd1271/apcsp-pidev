@@ -42,16 +42,17 @@ for (int i = 0; (i < 100 && string[i] != '\0'); i++)
  string[i] = string[i] + shift;
   if (porf == 'p')
 {
- printf("Decrypted string: %s\n", string);
+ printf("Encrypted String: %s\n", string);
 }
 else
 {
-printf("output saved in storedvalue.txt\n");
-FILE * fptr;
-fptr = fopen("/home/sp2b/apcsp-website/apcsp-website/htmlwebsite/storedvalue.txt", "w");
-fputs(string, fptr);
+printf("output saved in storedvalue.txt.\n");
+FILE * Fptr;
+Fptr = fopen("/var/tmp/storedvalue.txt", "w");
+fputs(string, Fptr);
 }
- break;
+break;
+
 
 case 2:
 for(int i = 0; (i < 100 && string[i] != '\0'); i++)
@@ -63,9 +64,9 @@ for(int i = 0; (i < 100 && string[i] != '\0'); i++)
 else
 {
 printf("output saved in storedvalue.txt\n");
-FILE * fptr;
-fptr = fopen("/home/sp2b/apcsp-website/apcsp-website/htmlwebsite/storedvalue.txt", "w");
-fputs(string, fptr);
+FILE * Fptr;
+Fptr = fopen("/var/tmp/storedvalue.txt", "w");
+fputs(string, Fptr);
 }
 break;
 }
