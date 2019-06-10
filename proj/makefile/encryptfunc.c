@@ -1,10 +1,10 @@
 #include "encryptfunc.h"
 #include <stdio.h>
-int file()
+int file(char h[100])
 {
 printf("output saved in storedvalue.txt.\n");
 FILE * Fptr;
 Fptr = fopen("/var/tmp/storedvalue.txt", "w");
-fputs(string, Fptr);
+fputs(h, Fptr);
 return 0;
 }
